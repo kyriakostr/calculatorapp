@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_firstConversion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:hint="From"
+            android:inputType="numberDecimal"
+            android:autofillHints="username"
+            tools:ignore="ExtraText" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <Spinner
+                android:id="@+id/spinner_firstConversion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="First conversion unit" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <Spinner
+                android:id="@+id/spinner_secondConversion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Second conversion unit" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+        <TextView
+            android:id="@+id/convertertextview"
+            android:layout_width="147dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonconvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert" />
+    </LinearLayout>
+
+</LinearLayout>
