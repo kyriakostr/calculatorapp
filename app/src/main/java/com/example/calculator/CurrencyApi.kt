@@ -83,9 +83,10 @@ object CurrencyApi {
                 }
             } catch (e: IOException) {
                 e.printStackTrace()
+                return@withContext e.message.toString()
             }
 
-            newamount.toString()
+             newamount.toString()
         }
 
     }

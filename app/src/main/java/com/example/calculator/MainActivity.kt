@@ -22,6 +22,8 @@ import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import net.objecthunter.exp4j.ExpressionBuilder
+import java.text.NumberFormat
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -193,7 +195,7 @@ class MainActivity : AppCompatActivity() {
 
                     Log.d("",CurrencyApi.basecurency+" "+CurrencyApi.currencies)
                     lifecycleScope.launch {
-                        converttextview.text = CurrencyApi.getcertaincurrency() +" "+CurrencyApi.currencies
+                        converttextview.text =  CurrencyApi.getcertaincurrency() +" "+CurrencyApi.currencies
 
                     }
                 }

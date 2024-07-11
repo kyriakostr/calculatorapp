@@ -18,7 +18,7 @@ class Calculator(var expression:String) {
 
              var result =  ExpressionBuilder(expression).build().evaluate().toString()
 
-             if(result.length>20 ){
+             if(result.length>15 ){
                  Log.d("",result.length.toString())
                  return  DecimalFormat("0.####E0").format(result.toDouble())
              }else{
